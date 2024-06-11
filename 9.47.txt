@@ -1,0 +1,11 @@
+Company	1986-96	1996
+Coca-Cola	29,8	43,3
+Mirage Resorts 	27,9	25,4
+Merck	22,1	24,0
+Microsoft	44,5	88,3
+Johnson & Johnson	22,2	18,1
+Intel	43,8	131,2
+Pfizer	21,7	34,0
+Procter & Gamble	21,9	32,1
+Berkshire Hathaway 	28,3	6,2
+S&P 500	11,8	20,3

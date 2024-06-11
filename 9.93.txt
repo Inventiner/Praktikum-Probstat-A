@@ -1,0 +1,7 @@
+Man	Waist Size Before	Waist Size After
+1	90,4	91,7
+2	95,5	93,9
+3	98,7	97,4
+4	115,9	112,8
+5	104	101,3
+6	85,6	84

@@ -1,0 +1,41 @@
+# Uji Hipotesis 1 Populasi
+# Method 1 (Uji Z (one-tail) untuk Mean (σ diketahui))
+  # Hipotesis: (Right-Tail)
+  # H0: μ ≤ 368
+  # H1: μ > 368
+  xavg <- 372.5
+  n <-  25
+  diff <- 368
+  sd <- 15
+  
+  zval <- (xavg-diff) / (sd/sqrt(n))
+  
+  alpha <- 0.05
+  
+  critval <- qnorm(p=alpha, lower.tail=FALSE)
+  if(zval > critval){
+    print("Reject H0 (Hipotesis Benar)")
+  } else {
+    print("Fail to reject H0 (Hipotesis Salah)")
+  }
+
+# Method 2 (Uji t (one-tail) untuk Mean (σ tidak diketahui))
+  # Hipotesis: (Right-Tail)
+  # H0: μ ≤ 368
+  # H1: μ > 368
+  xavg <- 372.5
+  n <-  36
+  diff <- 368
+  sd <- 15
+  alpha <- 0.01
+  
+  tval <- (xavg - diff) / (sd / sqrt(n))
+  critval  <- qt(p = alpha, df = n - 1, lower.tail = FALSE)
+  if(tval > critval){
+    print("Reject H0 (Hipotesis Benar)")
+  } else {
+    print("Fail to reject H0 (Hipotesis Salah)")
+  }
+
+# Method 3 (Uji Proporsi Populasi)
+  
