@@ -25,6 +25,8 @@ tval <- (x1avg - x2avg - d0) / (sqrt(var1/n1 + var2/n2))
 rtail <- qt(p=alpha/2, df = round(v), lower.tail = FALSE)
 ltail <- rtail * -1
 
+message <- sprintf("tval(%f) < ltail(%f) | tval(%f) > rtail(%f)", tval, ltail, tval, rtail)
+print(message)
 if(tval < ltail | tval > rtail) {
   print("Reject H0, (Hipotesis Benar)")
 } else {
